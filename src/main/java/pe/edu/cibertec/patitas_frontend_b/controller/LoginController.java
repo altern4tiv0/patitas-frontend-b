@@ -33,6 +33,8 @@ public class LoginController {
             model.addAttribute("loginModel", loginModel);
             return "inicio";
         }
+
+        // invocar API de validacion de usuario
         LoginModel loginModel = new LoginModel("00", "", "Bruno Diaz");
         model.addAttribute("loginModel", loginModel);
         return "principal";
